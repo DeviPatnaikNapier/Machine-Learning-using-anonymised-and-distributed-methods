@@ -22,7 +22,7 @@ df_test_category<- df_test[,15]
 
 ##run knn function
 
-pr <- knn(adult_subset[, -4],adult_subset_test,cl=df_target_category,k=5)
+predicted_income <- knn(adult_subset[, -4],adult_subset_test,cl=df_target_category,k=5)
 
 # Print the predicted class
 #cat("Predicted income:", pr, "\n")
